@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.home header, .home .shelf .books .book .book-preview .options-button, .home .shelf .books .book .book-preview .menu, .search .books .book .book-preview .menu, .search .no-result, .no-match {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.home header, .home .shelf .books .book .book-preview .options-button, .home .shelf .books .book .book-preview .menu, .search .books .book .book-preview .menu, .search .no-result, .no-match {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home {
+  position: relative;
+}
+
+.home header {
+  background-color: #2e7d32;
+  color: #fff;
+  height: 70px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.home .shelf .shelft-head .shelf-title {
+  margin: 1rem;
+  border-bottom: 1px solid #9e9e9e;
+}
+
+@media (max-width: 576px) {
+  .home .shelf .shelft-head .shelf-title {
+    font-size: 1.2rem;
+  }
+}
+
+.home .shelf .books {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(140px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 40px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.home .shelf .books .book {
+  width: 140px;
+  height: 300px;
+}
+
+.home .shelf .books .book .book-preview {
+  position: relative;
+  width: 140px;
+  height: 200px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.home .shelf .books .book .book-preview .thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.home .shelf .books .book .book-preview .options-button {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  width: 40px;
+  height: 40px;
+}
+
+.home .shelf .books .book .book-preview .menu {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #2e7d32;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.home .shelf .books .book .book-preview .menu select {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.home .shelf .books .book .book-preview .menu:hover {
+  background-color: #43a047;
+}
+
+.home .shelf .books .book .book-title {
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.home .shelf .books .book .book-subtitle {
+  color: #9e9e9e;
+  font-size: 12px;
+}
+
+.home button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.home button:hover {
+  background-color: #43a047;
+}
+
+.home .search-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.search header {
+  padding: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search header .back {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1 rem;
+  font-size: 20px;
+  background-color: #fff;
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 50px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.search header .back:hover {
+  color: #2e7d32;
+}
+
+.search header .search-input {
+  height: 100%;
+  width: 100%;
+  caret-color: #2e7d32;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.search .books {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(140px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 40px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.search .books .book {
+  width: 140px;
+  height: 300px;
+}
+
+.search .books .book:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.search .books .book .book-preview {
+  position: relative;
+  width: 140px;
+  height: 200px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search .books .book .book-preview .thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.search .books .book .book-preview .menu {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #2e7d32;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.search .books .book .book-preview .menu select {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.search .books .book .book-preview .menu:hover {
+  background-color: #43a047;
+}
+
+.search .books .book .book-title {
+  margin-top: 1rem;
+  font-size: 15px;
+}
+
+.search .books .book .book-subtitle {
+  color: #9e9e9e;
+  font-size: 12px;
+}
+
+.search .no-result {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.no-match {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.no-match h1 {
+  font-size: 5rem;
+  color: #43a047;
+}
+
+.no-match p {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+/*# sourceMappingURL=index.css.map */

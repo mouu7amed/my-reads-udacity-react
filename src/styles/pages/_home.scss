@@ -1,0 +1,122 @@
+.home {
+  position: relative;
+
+  header {
+    @extend %flex-center;
+    background-color: $green;
+    color: $light;
+    height: $headerHeight;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .shelf {
+    .shelft-head {
+      .shelf-title {
+        margin: 1rem;
+        border-bottom: 1px solid $text-light;
+
+        @include breakpoint(mobile) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 40px;
+      padding: 1rem;
+      margin: 1rem;
+
+      .book {
+        width: 140px;
+        height: 300px;
+
+        .book-preview {
+          position: relative;
+          width: 140px;
+          height: 200px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+          .thumbnail {
+            width: 100%;
+            height: 100%;
+          }
+
+          .options-button {
+            position: absolute;
+            right: -15px;
+            bottom: -15px;
+            width: 40px;
+            height: 40px;
+            @extend %flex-center;
+          }
+
+          .menu {
+            @extend %flex-center;
+            position: absolute;
+            right: -15px;
+            bottom: -15px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background: $green;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: $light;
+
+            select {
+              cursor: pointer;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              text-indent: 1px;
+              text-overflow: "";
+            }
+
+            &:hover {
+              background-color: $green-light;
+            }
+          }
+        }
+
+        .book-title {
+          margin-top: 1rem;
+          font-size: 15px;
+        }
+        .book-subtitle {
+          color: $text-light;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: $green;
+    color: $light;
+    padding: 1rem;
+    cursor: pointer;
+    transition: $duration;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+
+  .search-button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+}
