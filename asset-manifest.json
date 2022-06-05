@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-reads-udacity-react/static/css/main.d218087b.css",
+    "main.js": "/my-reads-udacity-react/static/js/main.f64b9ea7.js",
+    "index.html": "/my-reads-udacity-react/index.html",
+    "static/media/arrow-drop-down.svg": "/my-reads-udacity-react/static/media/arrow-drop-down.4378492a3a09dbfc31ff4b858fccb74a.svg",
+    "main.d218087b.css.map": "/my-reads-udacity-react/static/css/main.d218087b.css.map",
+    "main.f64b9ea7.js.map": "/my-reads-udacity-react/static/js/main.f64b9ea7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d218087b.css",
+    "static/js/main.f64b9ea7.js"
+  ]
+}
